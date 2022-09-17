@@ -1,6 +1,7 @@
 #!/bin/bash
 COMMAND=finder
-function errorExit() {
+function errorExit() 
+{
     echo
     echo "<$COMMAND: ERROR> $1"
     echo
@@ -8,7 +9,8 @@ function errorExit() {
     echo
     exit 1
 }
-function isNumber() {
+function isNumber() 
+{
     echo $1 | grep "^[0-9]*$" > /dev/null
     return $?
 }
